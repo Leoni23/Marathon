@@ -1,0 +1,18 @@
+<div>
+    <h2>Crear Departamento</h2>
+    <form (submit)="crearDepartamento()">
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" [(ngModel)]="nuevoDepartamento.name" name="name" required>
+      </div>
+      <div>
+        <label for="phone">Teléfono:</label>
+        <input type="text" [(ngModel)]="nuevoDepartamento.phone" name="phone" required>
+      </div>
+      <div>
+        <label for="descripcion">Descripción:</label>
+        <textarea [(ngModel)]="nuevoDepartamento.descripcion" name="descripcion" required></textarea>
+      </div>
+      <button type="submit">Crear Departamento</button>
+    </form>
+  </div>

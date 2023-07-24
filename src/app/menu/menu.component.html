@@ -1,0 +1,28 @@
+<nav class="menu">
+    <ul>
+      <li>
+        <a (click)="toggleSubMenu('departamentos')">Departamentos</a>
+        <ul *ngIf="showSubMenu['departamentos']" class="sub-menu">
+          <li><a routerLink="/departamentos/listar">Listar Departamentos</a></li>
+          <li><a routerLink="/departamentos/crear">Crear Departamento</a></li>
+          <li><a routerLink="/departamentos/modificar">Modificar Departamento</a></li>
+        </ul>
+      </li>
+      <li>
+        <a (click)="toggleSubMenu('empleados')">Empleados</a>
+        <ul *ngIf="showSubMenu['empleados']" class="sub-menu">
+          <li><a routerLink="/empleados/listar">Listar Empleados</a></li>
+          <li><a routerLink="/empleados/crear">Crear Empleado</a></li>
+          <li><a routerLink="/empleados/modificar">Modificar Empleado</a></li>
+        </ul>
+      </li>
+      <li>
+        <a (click)="toggleSubMenu('empresa')">Empresa</a>
+        <ul *ngIf="showSubMenu['empresa']" class="sub-menu">
+          <li><a routerLink="/empresa/listar">Listar Empresas</a></li>
+          <li><a routerLink="/empresa/crear">Crear Empresa</a></li>
+          <li><a routerLink="/empresa/modificar">Modificar Empresa</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>

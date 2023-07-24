@@ -1,0 +1,58 @@
+/* Estilos para el menú vertical */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #008B8B; /* Color de fondo del menú (celeste) */
+    padding: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff; /* Color del texto (blanco) */
+    font-weight: bold;
+    display: block; /* Hace que los enlaces ocupen todo el ancho del menú */
+  }
+  
+  .menu a:hover {
+    background-color: #006666; /* Color de fondo al pasar el mouse sobre los elementos del menú */
+  }
+  
+  /* Estilos para los submenús */
+  .sub-menu {
+    display: none;
+  }
+  
+  .menu li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    left: 200px; /* Alinea el submenú a la derecha del menú */
+    top: 0;
+    background-color: #00a1a1; /* Color de fondo para los submenús */
+    padding: 10px;
+    border: 1px solid #008b8b; /* Borde para los submenús */
+  }
+  
+  .sub-menu li {
+    margin: 5px 0;
+  }
+  
+  .sub-menu a {
+    color: #fff; /* Color de texto para los elementos de los submenús */
+  }
+  
+  .sub-menu a:hover {
+    text-decoration: underline; /* Subrayar los elementos de los submenús al pasar el mouse */
+  }

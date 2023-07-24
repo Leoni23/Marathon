@@ -1,0 +1,24 @@
+<div class="container">
+    <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Teléfono</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let departamento of departamentos">
+        <td>{{ departamento.id }}</td>
+        <td>{{ departamento.name }}</td>
+        <td>{{ departamento.phone }}</td>
+        <td>{{ departamento.descripcion }}</td>
+       
+      </tr>
+    </tbody>
+    
+  </table>
+</div>
+
+  
